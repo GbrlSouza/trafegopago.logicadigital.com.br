@@ -94,13 +94,13 @@ footer img {
 }
 
 .container-light {
-    padding: 60px 120px;
+    padding: 40px 120px;
     background: #fffa
 }
 
 @media (max-width: 1024px) {
     .container-light {
-        padding: 30px;
+        padding: 30px 5px;
         background: #fffa
     }
 }
@@ -122,7 +122,6 @@ footer img {
 }
 
 @media (max-width: 1024px) {
-
     .container-cta,
     .container-info {
         display: block;
@@ -131,6 +130,10 @@ footer img {
     .forms,
     .video {
         width: 100%;
+    }
+
+    .video {
+        margin-top: 30px;
     }
 }
 
@@ -141,14 +144,17 @@ footer img {
 }
 
 .container-dark {
-    padding: 60px 120px;
     background: var(--global-focus-color);
     color: var(--global-primary-color);
 }
 
-.container-infos {
+.container-info {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.container-infos, .container-info {
     padding: 60px 120px;
-    background: #fffa;
 }
 
 .container-info div {
@@ -163,14 +169,26 @@ footer img {
     width: 30%
 }
 
+.container-dark .container-info .icone {
+    width: 15%
+}
+
 @media (max-width: 1024px) {
+    .container-dark .container-info .icone {
+        width: 10%
+    }
+    
     .container-dark {
         display: block;
     }
 
+    .container-info {
+        padding: 30px 5px;
+    }
+
     .container-infos {
-        padding: 30px;
         background: #fffa;
+        padding: 30px 5px;
     }
 
     .container-info div {
@@ -662,4 +680,33 @@ form button:hover {
     .carousel-control-next-icon {
         margin-right: 0;
     }
+}
+
+.container-info .return,
+.container-infos .return{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+a.btn-link {
+    padding: 10px 30px;
+    background: #39a756;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a.btn-link:hover {
+    padding: 10px 40px;
+    border: 1px solid #39a756;
+    background: #fff;
+    color: #39a756;
+    transition: .3s;
 }
