@@ -1,0 +1,1 @@
+# trafegopago.logicadigital.com.br
