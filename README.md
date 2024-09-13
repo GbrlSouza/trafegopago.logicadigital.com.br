@@ -34,4 +34,6 @@ _scripts/script.js_: Arquivo JavaScript para funcionalidades interativas.
 
 ---
 
-Desenvolvido por Gabriel Souza
+# Desenvolvimento de Projeto
+
+Desenvolvido por **Gabriel Souza** para a [Lógica Digital](https://www.logicadigital.com.br).
